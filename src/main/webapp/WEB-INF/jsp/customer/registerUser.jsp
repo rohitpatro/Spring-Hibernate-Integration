@@ -1,12 +1,15 @@
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
 <html>
 <head>
-<title>Customer Registration</title>
+<title><spring:message code="label.title"></spring:message></title>
 </head>
 <body>
 	${message}
 
-	<h2>Customer Information</h2>
+	<h2>
+		<spring:message code="label.title"></spring:message>
+	</h2>
 	<form:form method="POST" action="register" commandName="customer">
 		<table>
 			<tr>
